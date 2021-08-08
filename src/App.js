@@ -196,10 +196,6 @@ function App() {
               <span className="menu-item__icon"><MdFeedback /></span>
               <span className="menu-item__title">Gửi phản hồi</span>
             </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><MdKeyboard /></span>
-              <span className="menu-item__title">Phím tắt</span>
-            </div>
             <hr />
             <div className="menu-item">
               <span className="menu-item__title">Chế độ hạn chế: Đã tắt</span>
