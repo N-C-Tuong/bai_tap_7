@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/bai_tap_7/static/css/main.d34bbd8f.chunk.css",
-    "main.js": "/bai_tap_7/static/js/main.8711028c.chunk.js",
-    "main.js.map": "/bai_tap_7/static/js/main.8711028c.chunk.js.map",
+    "main.js": "/bai_tap_7/static/js/main.7ef5ffa3.chunk.js",
+    "main.js.map": "/bai_tap_7/static/js/main.7ef5ffa3.chunk.js.map",
     "runtime-main.js": "/bai_tap_7/static/js/runtime-main.b5ee4b9c.js",
     "runtime-main.js.map": "/bai_tap_7/static/js/runtime-main.b5ee4b9c.js.map",
-    "static/js/2.fefee7db.chunk.js": "/bai_tap_7/static/js/2.fefee7db.chunk.js",
-    "static/js/2.fefee7db.chunk.js.map": "/bai_tap_7/static/js/2.fefee7db.chunk.js.map",
+    "static/js/2.97cd503d.chunk.js": "/bai_tap_7/static/js/2.97cd503d.chunk.js",
+    "static/js/2.97cd503d.chunk.js.map": "/bai_tap_7/static/js/2.97cd503d.chunk.js.map",
     "static/js/3.6a0336f8.chunk.js": "/bai_tap_7/static/js/3.6a0336f8.chunk.js",
     "static/js/3.6a0336f8.chunk.js.map": "/bai_tap_7/static/js/3.6a0336f8.chunk.js.map",
     "index.html": "/bai_tap_7/index.html",
     "static/css/main.d34bbd8f.chunk.css.map": "/bai_tap_7/static/css/main.d34bbd8f.chunk.css.map",
-    "static/js/2.fefee7db.chunk.js.LICENSE.txt": "/bai_tap_7/static/js/2.fefee7db.chunk.js.LICENSE.txt",
+    "static/js/2.97cd503d.chunk.js.LICENSE.txt": "/bai_tap_7/static/js/2.97cd503d.chunk.js.LICENSE.txt",
     "static/media/olympic_tokyo_2020.0b42967d.png": "/bai_tap_7/static/media/olympic_tokyo_2020.0b42967d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b5ee4b9c.js",
-    "static/js/2.fefee7db.chunk.js",
+    "static/js/2.97cd503d.chunk.js",
     "static/css/main.d34bbd8f.chunk.css",
-    "static/js/main.8711028c.chunk.js"
+    "static/js/main.7ef5ffa3.chunk.js"
   ]
 }
