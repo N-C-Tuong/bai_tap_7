@@ -24,13 +24,21 @@ function Navbar() {
     const handleShowUserManage = () => {
         setUserManageShow(!userManage);
     }
-
     const className = userManage === true ? '' : ' hidden';
+
+    const [searchValue, changeSearchValue] = useState('');
+    const changeInput = (event) => {
+        changeSearchValue(event.target.value);
+    }
 
     return (
         <nav className={'nav-bar ' + backGround}>
             <div className="search">
-                <input className="search__input" type="text" placeholder="Tìm kiếm" />
+                <input className="search__input" type="text" placeholder="Tìm kiếm" list="listSuggestion" 
+                 value={searchValue} onChange={(event) => changeInput(event)} />
+                <datalist id="listSuggestion">
+                    <option value={"Giá trị tìm kiếm: " + searchValue} />
+                </datalist>
                 <span className="search__button"><BsSearch className="btn btn-search" /></span>
                 <div className="search__voice">
                     <BsFillMicFill className="btn btn-voice" />
@@ -47,7 +55,7 @@ function Navbar() {
                     <img src={avatar} alt="" className="user-account__image" />
                     <div className="account-renderer">
                         <span className="account-renderer__name">Tường Nguyễn</span>
-                        <a href="#" className="account-renderer__manage">Quản lý tài khoản Google của bạn</a>
+                        <a href="." className="account-renderer__manage">Quản lý tài khoản Google của bạn</a>
                     </div>
                 </div>
                 <div className="user-menu">
