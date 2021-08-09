@@ -94,6 +94,52 @@ const trendingList = [
   },
 ]
 
+const userMenu = [
+  {
+    icon: <BsPersonSquare />,
+    title: 'Kênh của bạn'
+  }, {
+    icon: <HiCurrencyDollar />,
+    title: 'Giao dịch mua và gói hội viên'
+  }, {
+    icon: <IoSettings />,
+    title: 'YouTube Studio'
+  }, {
+    icon: <FaUserFriends />,
+    title: 'Chuyển đổi tài khoản'
+  }, {
+    icon: <FaSignOutAlt />,
+    title: 'Đăng xuất'
+  }, {
+    icon: <FaSun />,
+    title: 'Giao diện: Sáng'
+  }, {
+    icon: <IoLanguageOutline />,
+    title: 'Ngôn ngữ: Tiếng Việt'
+  }, {
+    icon: <GrLanguage />,
+    title: 'Địa điểm: Việt Nam'
+  }, {
+    icon: <IoSettingsSharp />,
+    title: 'Cài đặt'
+  }, {
+    icon: <FaUserShield />,
+    title: 'Dữ liệu của bạn trong YouTube'
+  }, {
+    icon: <IoHelpCircle />,
+    title: 'Trợ giúp'
+  }, {
+    icon: <MdFeedback />,
+    title: 'Gửi phản hồi'
+  }, {
+    icon: <MdKeyboard />,
+    title: 'Phím tắt'
+  }, {
+    icon: '',
+    title: 'Chế độ hạn chế: Đã tắt'
+  }
+]
+
 function App() {
   const [backGround, changeBackGround] = useState('bg-light');
   const handleChangeBackGround = () => {
@@ -103,8 +149,6 @@ function App() {
       changeBackGround('bg-light');
     }
   }
-
-  const GiaoDien = backGround === 'bg-light' ? 'Sáng' : 'Tối';
 
   const [userManage, setUserManageShow] = useState(false);
   const handleShowUserManage = () => {
@@ -116,6 +160,7 @@ function App() {
   const changeInput = (event) => {
     changeSearchValue(event.target.value);
   }
+
   return (
     <div className={"App " + backGround}>
 
@@ -147,59 +192,12 @@ function App() {
             </div>
           </div>
           <div className="user-menu">
-            <div className="menu-item">
-              <span className="menu-item__icon"><BsPersonSquare /></span>
-              <span className="menu-item__title">Kênh của bạn</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><HiCurrencyDollar /></span>
-              <span className="menu-item__title">Giao dịch mua và gói hội viên</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><IoSettings /></span>
-              <span className="menu-item__title">YouTube Studio</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><FaUserFriends /></span>
-              <span className="menu-item__title">Chuyển đổi tài khoản</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><FaSignOutAlt /></span>
-              <span className="menu-item__title">Đăng xuất</span>
-            </div>
-            <hr />
-            <div className="menu-item">
-              <span className="menu-item__icon"><FaSun /></span>
-              <span className="menu-item__title">Giao diện: {GiaoDien}</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><IoLanguageOutline /></span>
-              <span className="menu-item__title">Ngôn ngữ: Tiếng Việt</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><GrLanguage /></span>
-              <span className="menu-item__title">Địa điểm: Việt Nam</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><IoSettingsSharp /></span>
-              <span className="menu-item__title">Cài đặt</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><FaUserShield /></span>
-              <span className="menu-item__title">Dữ liệu của bạn trong YouTube</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><IoHelpCircle /></span>
-              <span className="menu-item__title">Trợ giúp</span>
-            </div>
-            <div className="menu-item">
-              <span className="menu-item__icon"><MdFeedback /></span>
-              <span className="menu-item__title">Gửi phản hồi</span>
-            </div>
-            <hr />
-            <div className="menu-item">
-              <span className="menu-item__title">Chế độ hạn chế: Đã tắt</span>
-            </div>
+            {userMenu.map((item, index) => {
+              return <div className="menu-item">
+                <span className="menu-item__icon">{item.icon}</span>
+                <span className="menu-item__title">{item.title}</span>
+              </div>
+            })}
           </div>
         </div>
       </nav>
